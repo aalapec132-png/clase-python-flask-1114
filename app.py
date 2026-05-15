@@ -5,11 +5,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def inicio():
-    # Variables dinámicas
-    titulo = "Mi página dinámica con Flask"
+    titulo = "Inicio"
     usuario = "Valentina"
-    mensaje = "Bienvenida a mi sitio web con datos desde Python"
-    fecha = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    mensaje = "Bienvenida a mi pagina Flask"
+    fecha = datetime.now().strftime("%Y-%m-%d")
 
     return render_template(
         "index.html",
@@ -18,6 +17,14 @@ def inicio():
         mensaje=mensaje,
         fecha=fecha
     )
+
+@app.route("/acerca")
+def acerca():
+    return render_template("acerca.html")
+
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
