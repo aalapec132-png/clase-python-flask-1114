@@ -4,6 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ titulo }}</title>
+
+   <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+h1{
+    color: #38bdf8;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+p{
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    background: #38bdf8;
+    color: black;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover{
+    background: white;
+    transform: scale(1.05);
+}
+
+ul{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+</style>
   </head>
 
   <body>
@@ -35,12 +93,16 @@
       de Clase Flask.
     </p>
 
+
     <hr />
 
     <h1>{{ titulo }}</h1>
 
+    <h1>Angie Valentina Alape Cubillos</h1>
+
     <a href="/acerca">Acerca</a>
-    <a href="/Contacto">Contacto</a>
+    <a href="/contacto">Contacto</a>
+    <a href="/recursos">Recursos</a>
 
     <p>{{ mensaje }}</p>
 

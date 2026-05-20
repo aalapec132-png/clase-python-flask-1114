@@ -87,9 +87,22 @@ Luego navega solo con los links para comprobar que todo conecta.
 ## Preguntas de reflexion tecnica
 
 1. Que parte define la URL publica: el nombre de la funcion o `@app.route(...)`?
+
+RESPUESTA:
+La URL pública la define @app.route(...), no el nombre de la función.
+
+
 2. Si cambias el nombre de la funcion, que debe mantenerse para no romper la URL?
+
+RESPUESTA:
+Si cambias el nombre de la función, debes mantener el decorador exacto y asegurarte de no tener dos funciones con el mismo nombre en tu código, ya que Flask usa los nombres de las funciones como identificadores únicos internos (endpoints).
+
+
 3. Por que separar cada seccion en su propia plantilla mejora el proyecto?
 
+RESPUESTA:
+
+Separar cada sección en su propia plantilla mejora el proyecto porque aplica el principio de Separación de Intereses y permite la herencia de plantillas con Jinja2. Esto te permite escribir la estructura base de tu web (como el header y footer) una sola vez, y actualizar el diseño global de todo tu sitio modificando un solo archivo.
 ## Entregable
 
 1. `app.py` actualizado con las 3 rutas.

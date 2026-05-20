@@ -92,8 +92,27 @@ Marca cada punto antes de entregar:
 ## Preguntas de reflexion tecnica
 
 1. Que ventaja tiene cambiar datos desde `app.py` sin tocar todo el HTML?
+
+RESPUESTA:
+
+-Contenido dinámico: Permite mostrar información actualizada en tiempo real (ej. precios, clima, usuarios) sin editar el archivo HTML.
+-Reutilización de código: Un solo archivo HTML puede servir para miles de productos distintos simplemente cambiando los datos que recibe desde Python.
+-Separación de responsabilidades: Separa la lógica de negocios del diseño visual, facilitando el mantenimiento.
+
+
 2. Que diferencia hay entre una variable definida en Python y una variable mostrada en Jinja2?
+
+RESPUESTA:
+
+-Variable en Python: Es un espacio de memoria donde el servidor procesa y almacena datos utilizando las reglas de tipado y lógica de Python.
+-Variable en Jinja2: Se escribe entre llaves dobles {{ }} dentro del archivo HTML. Es una instrucción que le indica al motor de plantillas que debe reemplazar ese espacio por el valor que Python le envió al momento de renderizar la página
+
 3. Si borras una variable de `render_template`, que parte visual deja de funcionar?
+
+
+RESPUESTA:
+
+Si eliminas una variable de la función render_template (en el archivo app.py) pero la sigues llamando en el HTML con {{ variable }}, solo dejará de verse el valor específico de esa variable.
 
 ## Entregable
 

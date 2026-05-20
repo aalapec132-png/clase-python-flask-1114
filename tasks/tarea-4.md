@@ -97,8 +97,23 @@ Tambien incluye links de regreso desde `recursos.html` al resto de paginas.
 ## Preguntas de reflexion tecnica
 
 1. Que cambia entre renderizar una variable simple y renderizar una lista?
+
+RESPUESTA:
+
+Diferencia entre variable y lista: Una variable simple se inyecta como un único valor de texto (ej. {{ nombre }}). Una lista requiere iterar sobre sus elementos (ej. {% for item in lista %}), lo que exige definir una estructura HTML repetitiva (como filas de tabla o viñetas) que envuelva cada elemento.
+
 2. Donde se ejecuta el bucle de Jinja: en el navegador o en Flask?
+
+RESPUESTA:
+
+Dónde se ejecuta el bucle: Todo el código Jinja (incluyendo los bucles for) se ejecuta en el servidor (Flask). El motor compila tu código dinámico y genera un archivo HTML completamente estático antes de enviarlo al navegador.
+
+
 3. Que ventaja aporta este patron para casos reales (productos, tareas, alumnos)?
+
+RESPUESTA:
+
+Ventajas en casos reales: Permite automatizar la creación de interfaces basándose en bases de datos. Al iterar sobre listas, generas dinámicamente el catálogo de una tienda, una lista de tareas pendientes o el registro de alumnos con un único bloque de código HTML, evitando escribir elementos repetidos manualmente.
 
 ## Entregable
 

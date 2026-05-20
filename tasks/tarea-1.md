@@ -140,13 +140,9 @@ El navegador muestra ese HTML al usuario.
 La ruta conecta al navegador con la función, y la función conecta con el archivo HTML.
 
 6. Que evidencia te da la terminal de que el servidor arranco correctamente?
-
 Flask normalmente muestra mensajes como:
-
 * Running on http://127.0.0.1:5000
-
 o:
-
 * Debug mode: on
 
 Eso indica que:
@@ -155,29 +151,21 @@ el servidor inició,
 Flask está escuchando conexiones,
 y puedes abrir esa dirección en el navegador.
 
-
 RESPUESTA:
 
 Flask normalmente muestra mensajes como:
 
 * Running on http://127.0.0.1:5000
-
 o:
-
 * Debug mode: on
-
 Eso significa que:
-
 el servidor inició correctamente,
 Flask está escuchando conexiones,
 y la aplicación ya puede abrirse desde el navegador.
 
-
 7. Si cambias el HTML y el navegador muestra otra cosa, que te demuestra eso sobre el flujo entre backend y frontend en este proyecto?
 
-
 RESPUESTA:
-
 Demuestra que existe una conexión entre el backend (Flask en Python) y el frontend (HTML mostrado en el navegador).
 
 El flujo funciona así:

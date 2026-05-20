@@ -1,9 +1,9 @@
 <!DOCTYPE html><html lang="es">
 <head>
-<meta charset="UTF-8">
- <title>Contacto</title>
+ <meta charset="UTF-8">
+ <title>Recursos</title>
 
-<style>
+ <style>
 
 *{
     margin: 0;
@@ -60,19 +60,16 @@ li{
 }
 
 </style>
-
 </head>
- <body>
+<body>
+<h1>Recursos de clase</h1>
 
- <h1>Pagina de Contacto</h1>
+<h1>Angie Valentina Alape Cubillos</h1>
 
- <h1>Angie Valentina Alape Cubillos</h1>
-
- <p> Puedes comunicarte conmigo por medio de esta pagina.</p>
- <a href="/">Inicio</a> 
-
+ <ul> {% for recurso in recursos %}<li>{{ recurso }}</li>{% endfor %} </ul>
+ <hr>
+ <a href="/">Inicio</a>
  <a href="/acerca">Acerca</a>
- <a href="/recursos">Recursos</a>
-
-</body>
-</html>
+ <a href="/contacto">Contacto</a>
+ 
+</body></html>
